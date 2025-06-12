@@ -6,7 +6,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")  # Ensure you set your API key as a
 
 def get_response(prompt):
     # Use OpenAI's GPT-4 model to generate a response (updated API)
-    response = openai.ChatCompletion.create(
+    response = openai.ChatCompletion.create(  # Corrected method
         model="gpt-4",  # Specify GPT-4 model (or "gpt-3.5-turbo" if you're using that)
         messages=[
             {"role": "user", "content": prompt}  # Pass the prompt as a user message
