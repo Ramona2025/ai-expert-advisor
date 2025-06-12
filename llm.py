@@ -6,14 +6,13 @@ openai.api_key = os.getenv("OPENAI_API_KEY")  # Ensure you set your API key as a
 
 def get_response(prompt):
     # Use OpenAI's GPT-4 model to generate a response (updated API)
-    response = openai.ChatCompletion.create(  # Corrected method
+    response = openai.completions.create(  # Updated method name for OpenAI 1.0.0+
         model="gpt-4",  # Specify GPT-4 model (or "gpt-3.5-turbo" if you're using that)
-        messages=[
-            {"role": "user", "content": prompt}  # Pass the prompt as a user message
-        ],
+        prompt=prompt,  # Pass the input prompt to the model
+        max_tokens=150,  # Limit the response to a maximum number of tokens (words)
         temperature=0.7  # Controls the creativity of the response (0 = deterministic, 1 = creative)
     )
-    return response['choices'][0]['message']['content'].strip()  # Return the generated response
+    return response['choices'][0]['text'].strip()  # Return the generated response
 
 if __name__ == "__main__":
     # Example usage
