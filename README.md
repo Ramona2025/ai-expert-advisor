@@ -101,15 +101,22 @@ The system architecture diagram below visually represents the components of the 
 ### System Architecture Diagram (Text-Based)
 Below is a text-based representation of the system architecture:
 
-Technician’s Device (Mobile/Desktop)
-               ↓
-API Gateway (handles requests)
-               ↓
-| LLM (Core) | <--- Interaction with Human Oversight
-               ↓
-     | Retrieval System |
-               ↓
-      | Knowledge Base |
+    Technician's Device (Mobile/Desktop)
+                      ↓
+       API Gateway (handles requests)
+                      ↓
+      -------------------------------
+     |           LLM (Core)          | <--- Interaction with Human Oversight
+      -------------------------------
+             ↓
+      -------------------------------
+     |      Retrieval System         |
+      -------------------------------
+             ↓
+      -------------------------------
+     |      Knowledge Base          |
+      -------------------------------
+
 
 ---
 
