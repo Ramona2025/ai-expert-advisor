@@ -108,11 +108,11 @@ Below is a text-based representation of the system architecture:
       -------------------------------
      |           LLM (Core)          | <--- Interaction with Human Oversight
       -------------------------------
-             ↓
+                     ↓
       -------------------------------
      |      Retrieval System         |
       -------------------------------
-             ↓
+                    ↓
       -------------------------------
      |      Knowledge Base          |
       -------------------------------
