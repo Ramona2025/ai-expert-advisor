@@ -98,7 +98,24 @@ To define the success of the AI-powered Expert Advisor, the following metrics wi
 ### System Architecture Diagram
 The system architecture diagram below visually represents the components of the solution and their interactions. This ensures clear communication among different stakeholders (Engineering, Product, Legal, etc.).
 
-**[System Architecture Diagram Here]**
+### System Architecture Diagram (Text-Based)
+Below is a text-based representation of the system architecture:
+
+Technician’s Device (Mobile/Desktop)
+↓
+API Gateway (handles requests)
+↓
+-------------------------------
+| LLM (Core) | <--- Interaction with Human Oversight
+-------------------------------
+↓
+-------------------------------
+| Retrieval System |
+-------------------------------
+↓
+-------------------------------
+| Knowledge Base |
+-------------------------------
 
 ---
 
